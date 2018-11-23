@@ -1,0 +1,53 @@
+
+td{
+    font-size: 10px;
+}
+tr{
+    widows: 25px;
+}
+/*特殊文字颜色设置*/
+div ul li span{
+    color:#FF842E;
+    font-size: 14px;
+}
+div h6{
+    color:#C2C2C2;
+}
+/*特殊文字颜色设置*/
+div ul li a {
+    color: #C2C2C2;
+    font-size: 14px;
+}
+div ul li a:hover{
+    color:white;
+    text-decoration:none;/*去除下划线*/
+}
+
+div ul li{
+    color: #C2C2C2;
+    font-size: 14px;
+}
+/*底部文字“向崇尚自由的加勒比海盗致敬！”颜色设置*/
+.one{
+    color: #C2C2C2;
+
+}
+/*底部橘色文字大小及颜色设置*/
+
+div ul li a span{
+    color:#FF842E;
+    font-size: 14px;
+}
+/*底部文件背景颜色及尺寸设置*/
+.footer{
+    width:100%;
+    height:330px;
+    background-color:#3C3C3C ;
+}
+    /*APP下载图片尺寸设置*/
+img.img1{
+    width: 106px;
+    height: 106px;
+}
+
+

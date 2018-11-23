@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/body_shouye.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/index.js"></script>
+    <title></title>
+</head>
+<body>
+<header >
+    <!--引入的头部文件-->
+    <iframe src="header_1.html" frameborder="0" class="header"></iframe>
+</header>
+    <!-- 首页轮播图片-->
+    <div>
+            <!--轮播图片-->
+        <div id="slider" >
+            <img src="img/body_shouye/body_first4.jpeg" alt="" class="show"  >
+            <img src="img/body_shouye/body_first3.jpeg" alt=""   >
+            <img src="img/body_shouye/body_first2.jpeg" alt=""   >
+            <img src="img/body_shouye/body_first1.jpeg" alt=""  >
+        </div>
+            <!--首页轮播图片-指示符-->
+                <div>
+                    <ul class="list-unstyled " id="box_relative">
+                        <li data-target="0"><img src="img/body_shouye/body_first4.jpeg" alt="" class="img1"></li>
+                        <li data-target="1"><img src="img/body_shouye/body_first3.jpeg" alt="" class="img1"></li>
+                        <li data-target="2"><img src="img/body_shouye/body_first2.jpeg" alt="" class="img1"></li>
+                        <li data-target="3"><img src="img/body_shouye/body_first1.jpeg" alt="" class="img1"></li>
+                    </ul>
+                </div>
+                <!--首页轮播图片-搜索栏-->
+                <div id="box_relative1">
+                    <ul class="d-flex  list-unstyled pt-2 pl-3 " >
+                        <li class="pr-5"><i><input type="radius" class="input1"></i>&nbsp;&nbsp;全部</li>
+                        <li class="pr-5"><i><input type="radius" class="input1"></i>&nbsp;&nbsp;酒店</li>
+                        <li class="pr-5"><i><input type="radius" class="input1"></i>&nbsp;&nbsp;目的地</li>
+                        <li class="pr-5"><i><input type="radius" class="input1"></i>&nbsp;&nbsp;旅行商城</li>
+                    </ul>
+                    <div><input type="text" placeholder="搜目的地/攻略/酒店/旅行特价" class="pt-0 ml-2 pl-2                             input2" ><span><img src="img/header/search.png" alt="" class=" ml-1 mb-1 "></span>
+                    </div>
+                </div>
+    </div>
+    <!--首页内容-->
+    <div class="container ">
+        <!--1F导航栏-->
+        <div class="row margin_top">
+            <!--旅行家专栏  专栏首页-->
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-6"><a href="#">旅行家专栏</a></div>
+                    <div class="col-6"><a href="#">专栏首页</a></div>
+                </div>
+            </div>
+            <!--热门游记筛选  最新发表   写游记-->
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-3"><a href="#">热门游记&nbsp;&nbsp;筛选</a></div>
+                    <div class="col-6"><a href="#">最新发表</a></div>
+                    <div class="col-3"><a href="#"><input type="text" value="写游记" class="input3                                      text-center"></a></div>
+                </div>
+            </div>
+        </div>
+        <!--2F首页内容块-->
+        <div class="row">
+                <div class="col-4 ">
+                <!--首页小轮播图模块-->
+                <!-- class是轮播的样式  data-ride是轮播切换样式 data-interval是轮播切换时间间隔  data-slide-to是指定轮播                   切换到第几个-->
+                    <!--左边模块1-->
+                    <div class="carousel position" id="demo" data-ride="carousel">
+                    <!--指示符-->
+                         <ul class="carousel-indicators position ">
+                        <li class="active li_style  " data-target="#demo" data-slide-to="0"></li>
+                        <li  class="li_style " data-target="#demo" data-slide-to="1"></li>
+                        <li  class="li_style " data-target="#demo" data-slide-to="2"></li>
+                        <li  class="li_style " data-target="#demo" data-slide-to="3"></li>
+                        <li  class="li_style " data-target="#demo" data-slide-to="4"></li>
+                    </ul>
+                    <!--轮播图片-->
+                        <div class="carousel-inner">
+                        <div class="carousel-item active width">
+                            <a href="#" class="color1"><img src="img/header/minlunbo1.jpeg" alt="" class="img2"><br>
+                                我的达卡隐秘去处</a>
+                            <p class="font_size"> 这里与其说是大学，不如说是公园，绿树湖水是这里的主题，教学楼反而是点缀。</p>
+                        </div>
+                        <div class="carousel-item width">
+                            <a href="#" class="color1"><img src="img/header/minlunbo2.jpeg" alt="" ><br>
+                            德里的两张面孔</a>
+                            <p class="font_size">“昨天从旧德里走到新德里，花了一个半小时。”</p>
+                        </div>
+                        <div class="carousel-item width">
+                            <a href="#" class="color1"><img src="img/header/minlunbo3.jpeg" alt="" ><br>
+                            普洱新加农</a>
+                            <p class="font_size">启发我进行咖啡环球之旅的，是一本书，《来自咖啡产地的急件》。</p>
+                        </div>
+                        <div class="carousel-item width">
+                            <a href="#" class="color1"><img src="img/header/minlunbo4.jpeg" alt="" ><br>
+                            手帕口是一个火车道口</a>
+                            <p class="font_size">就在刹那间，这些凌乱的影子，被飞驰而来的火车阻隔了。借用电影里的台词，大地在颤抖，空气在燃烧。</p>
+                        </div>
+                        <div class="carousel-item width">
+                            <a href="#" class="color1"><img src="img/header/minlunbo5.jpeg" alt="" ><br>
+                            再来一盏新罗酒</a>
+                            <p class="font_size">“一盏新罗酒，凌晨恐易消。归应冲鼓半，去不待笙调。歌好惟愁和，香浓岂惜飘。春场铺艾帐，下马雉媒娇。”</p>
+                        </div>
+                    </div>
+                    </div>
+                    <!--左边模块2-->
+                <!--旅游攻略推荐-->
+                    <div class="row  mt-3 ">
+                    <div class="col-6 ">旅游攻略推荐</div>
+                    <div class="col-6 "><a href="#">更多</a> </div>
+                    <p class="mt-4 "><a href="#"><img src="img/body_shouye/body_first01.jpeg" alt=""></a></p>
+                    <p class=""><a href="#" class="color1">南京本地人爱吃的鸭血粉丝汤</a></p>
+                    <p >
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="color2">azuxqz76</a>点评了&nbsp;&nbsp;渝中区 <a href="#" class="color2">巴九门老火锅</a></li>
+                        <li><a href="#" class="color2">微光少男</a>点评了&nbsp;&nbsp;老城区的  <a href="#" class="color2">隋唐洛阳城国</a></li>
+                        <li><a href="#" class="color2">jkidcm09</a>点评了&nbsp;&nbsp;  渝中区的 <a href="#" class="color2">巴九门冰火九</a></li>
+                        <li><a href="#" class="color2">go丁敏</a>点评了&nbsp;&nbsp;  锦江区的 <a href="#" class="color2"></a> 嗨岛兔.手撕</li>
+                        <li><a href="#" class="color2">zucmvn45</a>点评了&nbsp;&nbsp;  渝中区的 <a href="#" class="color2"> 巴九门老火锅</a></li>
+                    </ul>
+                    </p>
+                    </div>
+                    <!--左边模块3-->
+                <!--单个图片-->
+                    <div class="mt-5 "><img src="img/body_shouye/body_first02.gif" alt=""></div>
+                    <!--左边模块4-->
+                <!--第二个小轮播图片-->
+                    <div class="row mt-5 ">
+                        <div class="col-6 ">旅游攻略推荐</div>
+                        <div class="col-6 "><a href="#">更多</a> </div>
+                    </div>
+                    <div class="carousel position" id="demo1" data-ride="carousel">
+                    <!--指示符-->
+                            <ul class="carousel-indicators position ">
+                                <li class="active li_style1  " data-target="#demo1" data-slide-to="0"></li>
+                                <li  class="li_style1 " data-target="#demo1" data-slide-to="1"></li>
+                                <li  class="li_style1 " data-target="#demo1" data-slide-to="2"></li>
+                                <li  class="li_style1 " data-target="#demo1" data-slide-to="3"></li>
+                                <li  class="li_style1 " data-target="#demo1" data-slide-to="4"></li>
+                            </ul>
+                    <!--轮播图片-->
+                        <div class="carousel-inner mt-3">
+                            <div class="carousel-item active width">
+                                <a href="#" class="color2"><img src="img/body_shouye/lunbo01.jpeg" alt="" class="img2"><br>
+                                    现在，为世界出发</a>
+                                <p class="font_size"> 放纵好奇心，开启未知旅行</p>
+                            </div>
+                            <div class="carousel-item width">
+                                <a href="#" class="color2"><img src="img/body_shouye/lunbo02.jpeg" alt="" ><br>
+                                    马上定制你的VIP旅行标配</a>
+                                <p class="font_size">与全新Jeep大指挥官去旅行</p>
+                            </div>
+                            <div class="carousel-item width">
+                                <a href="#" class="color2"><img src="img/body_shouye/lunbo03.jpeg" alt="" ><br>
+                                    来参与路虎自驾线路评级</a>
+                                <p class="font_size">为你心中最爱的那条路点赞</p>
+                            </div>
+                            <div class="carousel-item width">
+                            <a href="#" class="color2"><img src="img/body_shouye/lunbo04.jpeg" alt="" ><br>
+                                为爱专属，一路趣FUN</a>
+                            <p class="font_size">查看攻略，磁护专属好礼等你赢！</p>
+                        </div>
+                            <div class="carousel-item width">
+                            <a href="#" class="color2"><img src="img/body_shouye/lunbo05.jpeg" alt="" ><br>
+                                拼图解锁目的地</a>
+                            <p class="font_size">手速拼上人生巅峰</p>
+                        </div>
+                    </div>
+                   </div>
+                    <!--左边模块5-->
+                    <!--单个图片（第二个）-->
+                    <div class="mt-5 "><img src="img/body_shouye/body_first07.jpeg" alt=""></div>
+                    <!--左边模块6-->
+                    <div class="row  mt-5 ">
+                        <div class="col-6 ">未知旅行实验室</div>
+                        <div class="col-6 "><a href="#">查看更多</a> </div>
+                    </div>
+                    <div class="mt-4 "><img src="img/body_shouye/body_first08.png" alt=""></div>
+                    <!--左边模块7-->
+                    <div>
+                        <div class="row  mt-5 ">
+                            <div class="col-6 ">马蜂窝2019校园招聘</div>
+                            <div class="col-6 "><a href="#">了解详情</a> </div>
+                        </div>
+                            <div class="mt-3 "><img src="img/body_shouye/body_first09.jpeg" alt=""></div>
+                            <div class="row mt-2 ">
+                                <div class="col-6 "><a href="#" class="color3">技术校招岗位</a></div>
+                                <div class="col-6 "><a href="#" class="color3">申请职位></a> </div>
+                            </div>
+                            <div class="row mt-2  ">
+                                <div class="col-6 "><a href="#" class="color3">产品校招岗位</a></div>
+                                <div class="col-6"><a href="#" class="color3">申请职位></a> </div>
+                            </div>
+                            <div class="row mt-2  ">
+                                <div class="col-6 "><a href="#" class="color3">设计校招岗位</a></div>
+                                <div class="col-6 "><a href="#" class="color3">申请职位></a> </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <!--横线-->
+                    <hr>
+                    <div id="main">
+                    <!--右边模块1-->
+                    <!--<div class="row right_color mt-4" >
+                            <div class="col-4 mt-2"><a href="#"><img src="img/body_shouye/right01.jpeg" alt=""></a></div>
+                            <div class="col-8">
+                                <div>
+                                <div><a href="#" class="color2">小妞日记|我们在樱花飞舞的季节里</a></div>
+                                <div class="mt-2 left_style ">［雪糕、樱花和哆啦A梦］ 『某日，家里』 “小宝贝，想再去 日本 玩一次吗？” “想啊想啊！” “为什么想呢？” “因为可以吃到好好吃的抹茶雪糕啊！去年爸比自己偷偷滴过去玩，看到你吃抹...</div>
+                                </div>
+                                <div class="mt-4">
+                                    <div>
+                                        <p class="tangxinbuju">
+                                            <span class="mt-2" ><a href="#" class="color3"><img src="img/body_shouye/daohang.png" alt="">和哥山市,by</a></span>
+                                            <span class="pl-3 mt-2"><a href="#" class="color3"><img src="img/body_shouye/01.png" alt="">yindyxia</a></span>
+                                            <span class="pl-3 color3 mt-2"><img src="img/body_shouye/shitu.png" alt="">5042/82</span>
+                                            <span class="pl-5 mt-2">712</span>
+                                            <span class="mt-0"><a href="#" class="color3"><img src="img/body_shouye/011.png" alt=""></a></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>-->
+                    <!--右边模块2
+                    <div class="row right_color mt-4">
+                        <div class="col-4 mt-2"><a href="#"><img src="img/body_shouye/right02.jpeg" alt=""></a></div>
+                        <div class="col-8">
+                            <div><a href="#" class="color2">心里有束光 眼里有片海｜福建小垦丁</a></div>
+                            <div class="mt-2 left_style ">从「镇海角」到「火山岛」 周末窝在宿舍，看到窗外灰蒙蒙的就不想出门，没有意外的话，这两天是在床上躺尸了，随口问了下同事 漳州 天气，听说是蓝天白云，立马滚起来，背上个小书包就出门...</div>
+                            <div class="mt-4">
+                                <div>
+                                    <p class="tangxinbuju">
+                                        <span class="mt-2" ><a href="#" class="color3"><img src="img/body_shouye/daohang.png" alt="">漳州,by</a></span>
+                                        <span class="pl-3 mt-2"><a href="#" class="color3"><img src="img/body_shouye/01.png" alt="">七月</a></span>
+                                        <span class="pl-3 color3 mt-2"><img src="img/body_shouye/shitu.png" alt="">5478/82</span>
+                                        <span class="pl-5 mt-2">712</span>
+                                        <span class="mt-0"><a href="#" class="color3"><img src="img/body_shouye/011.png" alt=""></a></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!--右边模块3-->
+                   <!-- <div class="row right_color mt-4">
+                        <div class="col-4 mt-2"><a href="#"><img src="img/body_shouye/right03.jpeg" alt=""></a></div>
+                        <div class="col-8">
+                            <div><a href="#" class="color2">✿背锅去旅行的大小M穷游系列✿被时光雕刻过的国度</a></div>
+                            <div class="mt-2 left_style ">📖📖 印度 旅游局曾推广过一则 印度 旅游的广告：不可思议的 印度 （incredible India），而我觉得这个形容词来形容 印度 真的再适合不过了。 ❥❥❥攻略部分❥❥❥ ​🐷应猪哥要求，按照我...</div>
+                            <div class="mt-4">
+                                <div>
+                                    <p class="tangxinbuju">
+                                        <span class="mt-2" ><a href="#" class="color3"><img src="img/body_shouye/daohang.png" alt="">漳州,by</a></span>
+                                        <span class="pl-3 mt-2"><a href="#" class="color3"><img src="img/body_shouye/01.png" alt="">七月</a></span>
+                                        <span class="pl-3 color3 mt-2"><img src="img/body_shouye/shitu.png" alt="">5478/82</span>
+                                        <span class="pl-5 mt-2">712</span>
+                                        <span class="mt-0"><a href="#" class="color3"><img src="img/body_shouye/011.png" alt=""></a></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!--右边模块4-->
+                    <!--<div class="row right_color mt-4">
+                        <div class="col-4 mt-2"><a href="#"><img src="img/body_shouye/right04.jpeg" alt=""></a></div>
+                        <div class="col-8">
+                            <div><a href="#" class="color2">看一眼沉迷，去极圈里追光</a></div>
+                            <div class="mt-2 left_style ">一些写在前面的话 这又是一篇没有时间点但是以时间先后排版的不合格无攻略全凭作者本人开心的游记。 写下开篇标题的时候，飞机刚从 冰岛 起飞不久，我看了一眼app，距离地面6531米，这个高...</div>
+                            <div class="mt-4">
+                                <div>
+                                    <p class="tangxinbuju">
+                                        <span class="mt-2" ><a href="#" class="color3"><img src="img/body_shouye/daohang.png" alt="">冰岛,by</a></span>
+                                        <span class="pl-3 mt-2"><a href="#" class="color3"><img src="img/body_shouye/01.png" alt="">七月</a></span>
+                                        <span class="pl-3 color3 mt-2"><img src="img/body_shouye/shitu.png" alt="">5478/82</span>
+                                        <span class="pl-5 mt-2">712</span>
+                                        <span class="mt-0"><a href="#" class="color3"><img src="img/body_shouye/011.png" alt=""></a></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!--右边模块5-->
+                   <!--<div class="row right_color mt-4">
+                        <div class="col-4 mt-2"><a href="#"><img src="img/body_shouye/right05.jpeg" alt=""></a></div>
+                        <div class="col-8">
+                            <div><a href="#" class="color2">【后会无期】——澳大利亚 墨尔本 最美沿海公路の大</a></div>
+                            <div class="mt-2 left_style ">他这样孤独的漂流，只是想去未知的世界看一眼。有些人，一辈子都只会缩在一个角落里，连窗外都懒得看，更别说踏出门。 ——————电影【后会无期】 很多时候计划总是赶不上变化，那就活在...</div>
+                            <div class="mt-4">
+                                <div>
+                                    <p class="tangxinbuju">
+                                        <span class="mt-2" ><a href="#" class="color3"><img src="img/body_shouye/daohang.png" alt="">阿波罗湾,by</a></span>
+                                        <span class="pl-3 mt-2"><a href="#" class="color3"><img src="img/body_shouye/01.png" alt="">七月</a></span>
+                                        <span class="pl-3 color3 mt-2"><img src="img/body_shouye/shitu.png" alt="">5478/82</span>
+                                        <span class="pl-5 mt-2">712</span>
+                                        <span class="mt-0"><a href="#" class="color3"><img src="img/body_shouye/011.png" alt=""></a></td>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!--右边模块6-->
+                    <!--<div class="row right_color mt-4">
+                        <div class="col-4 mt-2"><a href="#"><img src="img/body_shouye/right06.jpeg" alt=""></a></div>
+                        <div class="col-8">
+                            <div><a href="#" class="color2">❤牵手走遍全世界❤之一场不懂装懂的精神文化之旅，</a></div>
+                            <div class="mt-2 left_style ">加签的伪十年 其实去年十一才刚从加西回来，在不到一年的时间内，又再次飞往加东并不在原来的计划之内，完全是被加签10年的签证给骗了！请大家注意，虽然官方说法加签 和美 签一样都会给10...</div>
+                            <div class="mt-4">
+                                <div>
+                                    <p class="tangxinbuju">
+                                        <span class="mt-2"><a href="#" class="color3"><img src="img/body_shouye/daohang.png" alt="">加拿大,by</a></span>
+                                        <span class="pl-3 mt-2"><a href="#" class="color3"><img src="img/body_shouye/01.png" alt="">七月</a></span>
+                                        <span class="pl-3 color3 mt-2"><img src="img/body_shouye/shitu.png" alt="">5478/82</span>
+                                        <span class="pl-5 mt-2">712</span>
+                                        <span class="mt-0"><a href="#" class="color3"><img src="img/body_shouye/011.png" alt=""></a></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!--右边模块7-->
+                    <!--<div class="row right_color mt-4">
+                        <div class="col-4 mt-2"><a href="#"><img src="img/body_shouye/right07.jpeg" alt=""></a></div>
+                        <div class="col-8">
+                            <div><a href="#" class="color2">【蜂首纪念】【春华秋实 一首情诗】京都的旅行</a></div>
+                            <div class="mt-2 left_style ">我爱一个地方，会一直去。有人问我，你已经去过五次 京都 了，为何还要拜访它？很简单啊， 京都 是一本书，我每次只看了几页，我愿意花一生慢慢的读它。 在 京都 旅行，是一场美学的巡礼。 ...</div>
+                            <div class="mt-4">
+                                <div>
+                                    <p class="tangxinbuju">
+                                        <span  class="mt-2"><a href="#" class="color3"><img src="img/body_shouye/daohang.png" alt="">京都,by</a></span>
+                                        <span class="pl-3 mt-2"><a href="#" class="color3"><img src="img/body_shouye/01.png" alt="">七月</a></span>
+                                        <span class="pl-3 color3 mt-2"><img src="img/body_shouye/shitu.png" alt="">5478/82</span>
+                                        <span class="pl-5 mt-2">712</span>
+                                        <span class="mt-0"><a href="#" class="color3"><img src="img/body_shouye/011.png" alt=""></a></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!--右边模块8-->
+                   <!-- <div class="row right_color mt-4">
+                        <div class="col-4 mt-2"><a href="#"><img src="img/body_shouye/right08.jpeg" alt=""></a></div>
+                        <div class="col-8">
+                            <div><a href="#" class="color2">五年未见，带着准医学硕士生去帝都――北京</a></div>
+                            <div class="mt-2 left_style ">某天，高中同学突然发微信 m： 北京 去不去 w：什么时候 m：大概6月10号以后 w：还有谁 m：我室友，三个女生。她们打算去 北京 玩个三四天就回来，我还想去 天津 。 w：去去去 m：另外两个室...</div>
+                            <div class="mt-4">
+                                <div>
+                                    <p class="tangxinbuju">
+                                        <span class="mt-2"><a href="#" class="color3"><img src="img/body_shouye/daohang.png" alt="">北京,by</a></span>
+                                        <span class="pl-3 mt-2"><a href="#" class="color3"><img src="img/body_shouye/01.png" alt="">七月</a></span>
+                                        <span class="pl-3 color3 mt-2"><img src="img/body_shouye/shitu.png" alt="">5478/82</span>
+                                        <span class="pl-5 mt-2">712</span>
+                                        <span class="mt-0"><a href="#" class="color3"><img src="img/body_shouye/011.png" alt=""></a></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!--右边模块9-->
+                    <!--<div class="row right_color mt-4">
+                        <div class="col-4 mt-2"><a href="#"><img src="img/body_shouye/right09.jpeg" alt=""></a></div>
+                        <div class="col-8">
+                            <div><a href="#" class="color2">萨瓦迪卡卡昆卡（正在进行中）</a></div>
+                            <div class="mt-2 left_style ">前言 中秋加国庆的超长假期，选择 泰国 很多人都觉得很诧异，但是攻略做完，真的觉得两个礼拜都不够！ 第一次来 泰国 ，选择了 上海 清迈 甲米 曼谷 上海 的路线，一共15天 虽然每年都旅行...</div>
+                            <div class="mt-4">
+                                <div>
+                                    <p class="tangxinbuju">
+                                        <span class="mt-2"><a href="#" class="color3"><img src="img/body_shouye/daohang.png" alt="">泰国,by</a></span>
+                                        <span class="pl-3 mt-2"><a href="#" class="color3"><img src="img/body_shouye/01.png" alt="">七月</a></span>
+                                        <span class="pl-3 color3 mt-2"><img src="img/body_shouye/shitu.png" alt="">5478/82</span>
+                                        <span class="pl-5 mt-2">712</span>
+                                        <span class="mt-0"><a href="#" class="color3"><img src="img/body_shouye/011.png" alt=""></a></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!--右边模块10-->
+                   <!-- <div class="row right_color mt-4">
+                        <div class="col-4 mt-2"><a href="#"><img src="img/body_shouye/right10.jpeg" alt=""></a></div>
+                        <div class="col-8">
+                            <div><a href="#" class="color2">直到世界尽头，斯堪的纳维亚追光之旅（北欧挪威自驾</a></div>
+                            <div class="mt-2 left_style ">先欣赏几张美图吧。 世外 桃源 雷讷 镇 通往“极光之城”的E10公路 一路向北 山湖海岛 “极光之城” 特罗姆瑟 新港 圆塔一角 哥本哈根 为什么是挪威、丹麦？ 原因很简单，因为年底就要结婚了...</div>
+                            <div class="mt-4">
+                                <div>
+                                    <p class="tangxinbuju">
+                                        <span class="mt-2"><a href="#" class="color3"><img src="img/body_shouye/daohang.png" alt="">那威,by</a></span>
+                                        <span class="pl-3 mt-2"><a href="#" class="color3"><img src="img/body_shouye/01.png" alt="">七月</a></span>
+                                        <span class="pl-3 color3 mt-2"><img src="img/body_shouye/shitu.png" alt="">5478/82</span>
+                                        <span class="pl-5 mt-2">712</span>
+                                        <span class="mt-0"><a href="#" class="color3"><img src="img/body_shouye/011.png" alt=""></a></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>-->
+                    </div>
+                    <!--分页-->
+                    <div class="my_gray p-2">
+                        <ul class="pagination justify-content-end mb-0">
+                            <li class="page-item disabled">
+                                <a href="" class="page-link">上一页</a>
+                            </li>
+                            <li class="page-item active">
+                                <a href="" class="page-link">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="" class="page-link bg-transparent">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="" class="page-link bg-transparent">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a href="" class="page-link bg-transparent">下一页</a>
+                            </li>
+                        </ul>
+                    </div>            
+                </div>
+        </div> 
+    </div>
+ </body>
+<footer>
+    <iframe src="footer.html" frameborder="0" class="footer"></iframe>
+</footer>
+
+</html>

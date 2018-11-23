@@ -1,0 +1,14 @@
+/*头部引入文件的样式*/
+.header{
+    height:85px;
+    width:100%;
+}
+/*底部引入文件样式*/
+
+.footer{
+    width:100%  !important;
+    height:333px;
+    background-color:#3C3C3C ;
+    margin-top: 20px;
+
+}

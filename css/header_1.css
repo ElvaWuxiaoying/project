@@ -1,0 +1,20 @@
+.input:hover{
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    box-shadow:0 0 8px orange ;
+    float: left;
+}
+input{
+    margin-left: 480px;
+    margin-top: 30px;
+}
+.navbar{
+    width:580px;
+    position: fixed;
+}
+/*切换样式*/
+.nav-item1:hover{
+    border-bottom: 2px solid orange;
+}

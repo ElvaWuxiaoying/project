@@ -1,0 +1,20 @@
+#设置客户端连接的编码
+SET NAMES UTF8;
+#丢弃数据库，如果存在
+DROP DATABASE IF EXISTS myproject;
+#创建数据库，设置编码为utf8
+CREATE DATABASE myproject CHARSET=UTF8;
+#进入该数据库
+USE myproject;
+#创建数据表
+CREATE TABLE myproject_laptop(
+  lid INT PRIMARY KEY,
+  title VARCHAR(128),
+  price DECIMAL(7,2),  
+  details VARCHAR(10000),
+  shelfTime DATE,
+  isOnsale BOOL
+ 
+);
+#插入数据
+INSERT INTO myproject_laptop VALUES(1,'小妞日记|我们在樱花飞舞的季节里','null','【［雪糕、樱花和哆啦A梦］ 『某日，家里』 “小宝贝，想再去 日本 玩一次吗？” “想啊想啊！” “为什么想呢？” “因为可以吃到好好吃的抹茶雪糕啊！去年爸比自己偷偷滴过去玩，看到你吃抹...','null',1);

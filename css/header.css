@@ -1,0 +1,45 @@
+/*首页头部log样式设置*/
+.log{
+    width:120px;
+    height: 33px;
+}
+
+.one{
+    font-size: 18px;
+    color: #333333;
+}
+.one:hover{
+    color:#FF9D00 ;
+}
+.two{
+    color:#FF9D00 ;
+}
+
+/*header_1里面的头部微信、微博、qq图片设置*/
+.img_pt{
+    width: 26px;
+    height:26px;
+}
+.pt{
+    width:26px;
+    height: 26px;
+}
+/*input输入框大小设置*/
+.input_h1{
+    width:130px;
+    height: 35px;
+    border-radius: 4px;
+    background-color: #d6d8d9;
+}
+.input_h1:hover{
+    width:382px;
+    height:35px;
+    background-color: white;
+    border:1px orange solid;
+    float: left;
+
+}
+/*切换样式*/
+.nav-item1:hover{
+    border-bottom: 2px solid orange;
+}
